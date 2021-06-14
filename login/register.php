@@ -17,24 +17,24 @@
                     <div class="name-details">
                          <div class="field input">
                               <label>First Name</label>
-                              <input type="text" name="fname" placeholder="First Name">
+                              <input type="text" name="fname" placeholder="First Name" required>
                          </div>
                          <div class="field input">
                               <label>Last Name</label>
-                              <input type="text" name="lname" placeholder="Last Name">
+                              <input type="text" name="lname" placeholder="Last Name" required>
                          </div>
                     </div>
                     <div class="field input">
                          <label>Email</label>
-                         <input type="email" name="email" placeholder="Enter Your Email Address">
+                         <input type="email" name="email" placeholder="Enter Your Email Address" required>
                     </div>
                     <div class="field input">
                          <label>Password</label>
-                         <input type="password" name="password" placeholder="Enter New Password">
+                         <input type="password" name="pswrd" placeholder="Enter New Password" required>
                          <i class="fas fa-eye"></i>
                     </div>
                     <div class="field button">
-                         <input type="submit" name="register" value="Register">
+                         <input type="submit" value="Register">
                     </div>
                </form>
                <div class="link">Already Registered? <a href="./index.html">Login</a></div>

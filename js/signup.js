@@ -1,5 +1,5 @@
-const form = document.querySelector(".signup");
-submitBtn=form.querySelector(".button input");
+const form = document.querySelector(".signup form"),
+      submitBtn=form.querySelector(".button input");
 
 form.onsubmit=(e)=>{
      e.preventDefault(); //preventing form from submitting
@@ -16,5 +16,7 @@ submitBtn.onclick=()=>{
                }
           }
      }
-     xhr.send();
+     // Sending form data through ajax to php
+     let formData = new FormData(form);
+     xhr.send(formData);
 }
