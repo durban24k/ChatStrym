@@ -41,6 +41,6 @@
           </section>
      </div>
      <script src="./js/pass-show.js"></script>
-     <script src="./js/signup.js"></script>
+     <script src="../js/signup.js"></script>
 </body>
 </html>
