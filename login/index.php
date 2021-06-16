@@ -27,7 +27,7 @@
                          <input type="submit" name="login" value="Login">
                     </div>
                </form>
-               <div class="link">Not Yet Registered? <a href="#">Signup Now</a></div>
+               <div class="link">Not Yet Registered? <a href="./register.php">Signup Now</a></div>
           </section>
      </div>
      <script src="./js/pass-show.js"></script>

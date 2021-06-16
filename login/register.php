@@ -37,7 +37,7 @@
                          <input type="submit" value="Register">
                     </div>
                </form>
-               <div class="link">Already Registered? <a href="./index.html">Login</a></div>
+               <div class="link">Already Registered? <a href="./">Login</a></div>
           </section>
      </div>
      <script src="./js/pass-show.js"></script>

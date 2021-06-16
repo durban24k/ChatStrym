@@ -48,25 +48,26 @@
                     </ul>
                </li>
                <li><a href="#">Demo</a></li>
-               <li><a href="#" class="freetrial">Free Trial</a></li>
-               <li><a href="#" class="lp-login">Log In</a></li>
+               <li><a href="../login/register.php" class="freetrial" target="_blank">Free Trial</a></li>
+               <li><a href="../login" class="lp-login" target="_blank">Log In</a></li>
           </ul>
      </nav>
      <div class="hero">
           <div class="hero-info">
                <div class="hero-heading">
                     <h2>ChatStrym. A way to connect with customers faster</h2>
-                    <p>Join the Chatstrym community. Boost your customer engagement and watch your sales shot through the roof.</p>
+                    <p>Join the Chatstrym community. <br>Boost your customer engagement and watch your sales shoot through the roof.</p>
+                    <a href="../login/register.php" target="_blank"><i class="fas fa-fighter-jet"></i> Try it Out</a>
                </div>
           </div>
           <div class="hero-blob">
-               <img src="./images/lp-blob.svg" alt="">
+               <img src="./images/lp-illust.svg" alt="">
           </div>
      </div>
 
      <!-- BUTTON -->
      <button class="live-help bounce" id="openChat" onclick="openChat()"><i class="fas fa-comment-alt"></i></button>
-     <button class="live-help" id="closeChat" onclick="closeChat()"><i class="fas fa-chevron-down"></i></button>
+     <button class="live-help chevrondown" id="closeChat" onclick="closeChat()"><i class="fas fa-chevron-down"></i></button>
      <span class="tooltip bounce" id="tooltip">Welcome, Click To Chat!</span>
      <div class="wrapper" id="chatWidget">
           <div class="title">ChatStrym</div>
