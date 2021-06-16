@@ -12,7 +12,7 @@
 <body>
      <div class="contact-links">
           <div class="link">
-               <a href="#"><i class="fas fa-map-marker-alt"></i> USIU Rd, Nairobi</a>
+               <a href="#"><i class="fas fa-map-marker-alt"></i> Nairobi, KENYA</a>
           </div>
           <div class="link">
                <a href="#"><i class="fas fa-envelope-open"></i> info@chatstrym.app</a>
@@ -53,13 +53,21 @@
           </ul>
      </nav>
      <div class="hero">
-          
+          <div class="hero-info">
+               <div class="hero-heading">
+                    <h2>ChatStrym. A way to connect with customers faster</h2>
+                    <p>Join the Chatstrym community. Boost your customer engagement and watch your sales shot through the roof.</p>
+               </div>
+          </div>
+          <div class="hero-blob">
+               <img src="./images/lp-blob.svg" alt="">
+          </div>
      </div>
 
      <!-- BUTTON -->
      <button class="live-help bounce" id="openChat" onclick="openChat()"><i class="fas fa-comment-alt"></i></button>
      <button class="live-help" id="closeChat" onclick="closeChat()"><i class="fas fa-chevron-down"></i></button>
-     <span class="tooltip" id="tooltip">Welcome, Click To Chat!</span>
+     <span class="tooltip bounce" id="tooltip">Welcome, Click To Chat!</span>
      <div class="wrapper" id="chatWidget">
           <div class="title">ChatStrym</div>
           <div class="form">
