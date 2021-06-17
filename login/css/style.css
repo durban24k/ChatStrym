@@ -6,25 +6,48 @@
      font-family:'Poppins',sans-serif;
      text-decoration:none;
 }
-body{
-     display:flex;
-     align-items:center;
-     justify-content:center;
-     min-height:100vh;
-     background:rgb(247,247,247);
-}
 :root{
      --black-color:#034730;
      --white-color:#fff;
      --sky-color:#e4f7e5;
      --light-black:#01221d;
- }
-.wrapper{
+     --lighter-green:#078159;
+     --google-red:#d32c1d;
+     --light-red:#ec4c3d;
+     --sky-orange:#cf5707;
+}
+
+/* Hero Section */
+.hero{
+     width:100%;
+     height:100vh;
+     background:var(--white-color);
+     display:flex;
+}
+.hero .hero-img{
+     width:50%;
+     height:100%;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+}
+.hero .hero-img img{
+     width:600px;
+     height:600px;
+}
+.hero .hero-login{
+     width:50%;
+     height:100%;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+}
+
+
+.hero .hero-login .wrapper{
      background:rgb(255,255,255);
      width:450px;
      border-radius:16px;
-     box-shadow:0 0 128px rgba(0,0,0,.1),
-                0 32px 64px -48px rgba(0,0,0,.5);
 }
 
 .form{
@@ -101,12 +124,41 @@ form .name-details .field:last-child{
      margin-top:10px;
      height:45px;
      border:none;
+     font-family: "FontAwesome","Poppins",sans-serif;
      font-size:17px;
      font-weight:400;
      background:var(--black-color);
      color:rgb(255,255,255);
      border-radius:5px;
      cursor:pointer;
+     transition: .7s;
+}
+.form form .button input:hover{
+     background:var(--lighter-green);
+}
+.form form .forgot-pass{
+     text-align:center;
+}
+.form form .forgot-pass a{
+     color:var(--sky-orange);
+}.form form .forgot-pass a:hover{
+     text-decoration:underline;
+}
+.form form .google input{
+     margin-top:10px;
+     height:45px;
+     border:none;
+     font-family: "FontAwesome","Poppins",sans-serif;
+     font-size:17px;
+     font-weight:400;
+     background:var(--google-red);
+     color:rgb(255,255,255);
+     border-radius:5px;
+     cursor:pointer;
+     transition: .7s;
+}
+.form form .google input:hover{
+     background:var(--light-red);
 }
 .form .link{
      text-align:center;
