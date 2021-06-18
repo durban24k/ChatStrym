@@ -206,6 +206,7 @@ nav .show, nav input, .icon{
 }
 .hero .hero-info .hero-heading a:hover{
     background:var(--dark-orange);
+    text-decoration:underline;
     transition:.5s;
 }
 .hero .hero-blob{
