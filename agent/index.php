@@ -105,12 +105,12 @@
               <a href="#"><i class='bx bx-dots-horizontal-rounded'></i></a>
             </header>
             <div class="chat-box">
-              <div class="chat outgoing">
+            <div class="chat incoming">
                 <div class="data">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
               </div>
-              <div class="chat incoming">
+              <div class="chat outgoing">
                 <div class="data">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>

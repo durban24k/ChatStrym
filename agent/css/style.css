@@ -13,6 +13,7 @@
     --green-grey:#cdf0e3;
     --light-green:#e5faf3;
     --gray-color:rgb(235, 235, 235);
+    --sky-orange:#cf5707;
 }
 a{
   text-decoration:none;
@@ -511,8 +512,8 @@ body{
   max-width:calc(100% - 130px);
 }
 .chat-content .chatarea .chat-box .incoming .data p{
-  color:var(--black-color);
-  background:var(--white-color);
+  color:var(--white-color);
+  background:var(--sky-orange);
   border-radius:18px 18px 18px 0;
 }
 .chat-content .chatarea .typing-area{
@@ -556,8 +557,8 @@ body{
   cursor: pointer;
   outline: none;
   border-radius: 3px;
-  background: var(--black-color);
-  border: 1px solid var(--light-black);
+  background: var(--sky-orange);
+  border: 1px solid var(--sky-orange);
 }
 .chat-content .chatarea .typing-area .input-message button i{
   font-size:25px;
