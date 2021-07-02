@@ -7,6 +7,7 @@
      <title>ChatStrym | Register</title>
      <link rel="stylesheet" href="./css/style.css">
      <script src="https://kit.fontawesome.com/3637a395ce.js" crossorigin="anonymous"></script>
+     <link rel="icon" href="./images/logo.png" type="image/x-icon">
 </head>
 <body>
      <div class="hero">
