@@ -1,3 +1,9 @@
+<?php 
+     session_start();
+     if(!isset($_SESSION['unique_id'])){
+          header("location: ../login/index.php");
+     }
+?>
 <!DOCTYPE html> 
 <html lang="en" dir="ltr">
   <head>
@@ -55,10 +61,17 @@
         <div class="user">
           <a href="#" class="menu-btn" onclick="openTab(event,'Profile')">
             <div class="user_details">
-              <img src="images/profile.jpeg" alt="">
+              <?php
+                include_once "../config/config.php";
+                $sql=mysqli_query($conn,"SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
+                if(mysqli_num_rows($sql) > 0){
+                  $row = mysqli_fetch_assoc($sql);
+                }
+              ?>
+              <img src="<?php echo $row['img']; ?>" alt="">
               <div class="name_job">
-                <div class="name">Alfred Wanjau</div>
-                <div class="job">Admin</div>
+                <div class="name"><?php echo $row['fname']." ".$row['lname']; ?></div>
+                <div class="job"><?php echo $row['login_status']; ?></div>
               </div>
             </div>
           </a>
@@ -78,24 +91,7 @@
               <button><i class='bx bx-search-alt'></i></button>
             </div>
             <div class="users-list">
-              <a href="#">
-                <div class="user-content">
-                  <div class="user-details">
-                    <span>Alfred Wanjau</span>
-                    <p>This is a test message</p>
-                  </div>
-                </div>
-                <div class="status-dot"><i class='bx bxs-circle'></i></div>
-              </a>
-              <a href="#">
-                <div class="user-content">
-                  <div class="user-details">
-                    <span>Alfred Wanjau</span>
-                    <p>This is a test message</p>
-                  </div>
-                </div>
-                <div class="status-dot"><i class='bx bxs-circle'></i></div>
-              </a>
+              
             </div>
           </section>
           <section class="chatarea">
@@ -128,8 +124,10 @@
               </div>
             </div>
             <form action="#" class="typing-area">
-              <div class="input-message">
-                <textarea name="" id="data" cols="100" rows="4" placeholder="Type a message here ..."></textarea>
+              <div class="input-field">
+                <input type="text" name="outgoing_id" value="<?php echo $_SESSION['unique_id'] ?>" >
+                <input type="text" name="incoming_id" value="<?php echo $user_id ?>" >
+                <textarea name="message" id="data" cols="100" rows="4" placeholder="Type a message here ..."></textarea>
                 <button><i class='bx bxs-send'></i></button>
               </div>
             </form>
@@ -139,12 +137,13 @@
           </section>
         </div>
       </div>
-      <div class="tab-content emails" id="Dashboard">Dashboard</div>
+      <!-- <div class="tab-content emails" id="Dashboard">Dashboard</div>
       <div class="tab-content analytics" id="Analytics">Analytics</div>
       <div class="tab-content settings" id="Settings">Settings</div>
-      <div class="tab-content profile" id="Profile">Profiles</div>
+      <div class="tab-content profile" id="Profile">Profiles</div> -->
     </div>
-    <script src="./js/index.js"></script>
     <script src="./js/chat.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="../js/insert-chat.js"></script>
   </body>
 </html>

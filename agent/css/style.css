@@ -277,6 +277,7 @@ body{
   width:45px;
   object-fit: cover;
   border-radius: 12px;
+  background: #ffffff;
 }
 .name_job{
   margin-left:10px;
@@ -524,10 +525,10 @@ body{
   justify-content: space-evenly;
   background:var(--gray-color);
 }
-.chat-content .chatarea .typing-area .input-message{
+.chat-content .chatarea .typing-area .input-field{
   position: relative;
 }
-.chat-content .chatarea .typing-area .input-message textarea{
+.chat-content .chatarea .typing-area .input-field textarea{
   border-radius: 3px;
   border: 1px solid transparent;
   overflow: auto;
@@ -537,17 +538,17 @@ body{
   font-size: 14px;
   transition: all 0.3s ease;
 }
-.chat-content .chatarea .typing-area .input-message textarea:focus{
+.chat-content .chatarea .typing-area .input-field textarea:focus{
   border-color: var(--light-black);
 }
-.chat-content .chatarea .typing-area .input-message textarea::placeholder{
+.chat-content .chatarea .typing-area .input-field textarea::placeholder{
   color: var(--black-color);
   transition: all 0.3s ease;
 }
-.chat-content .chatarea .typing-area .input-message textarea:focus::placeholder{
+.chat-content .chatarea .typing-area .input-field textarea:focus::placeholder{
   color: #bfbfbf;
 }
-.chat-content .chatarea .typing-area .input-message button{
+.chat-content .chatarea .typing-area .input-field button{
   position: absolute;
   right: 5px;
   bottom: 10%;
@@ -560,7 +561,7 @@ body{
   background: var(--sky-orange);
   border: 1px solid var(--sky-orange);
 }
-.chat-content .chatarea .typing-area .input-message button i{
+.chat-content .chatarea .typing-area .input-field button i{
   font-size:25px;
 }
 

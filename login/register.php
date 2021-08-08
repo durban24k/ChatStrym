@@ -19,7 +19,7 @@
                     <section class="form signup">
                          <header>ChatStrym <span>|</span> Register</header>
                          <form action="#">
-                              <div class="error-txt">This is an error message!!</div>
+                              <div class="error-txt"></div>
                               <div class="name-details">
                                    <div class="field input">
                                         <label>First Name</label>
@@ -42,9 +42,9 @@
                               <div class="field button">
                                    <input type="submit" value="&#xf0e0;  Signup With Email">
                               </div>
-                              <div class="field google">
+                              <!-- <div class="field google">
                                    <input type="submit" value="&#xf1a0;  Signup With Google">
-                              </div>
+                              </div> -->
                          </form>
                          <div class="link">Already Registered? <a href="./">Login</a></div>
                     </section>

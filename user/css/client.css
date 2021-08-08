@@ -361,7 +361,7 @@ nav .show, nav input, .icon{
     margin-right:10px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
 }
-.wrapper .typing-field{
+.wrapper .typing-area{
     display: flex;
     height: 70px;
     width: 100%;
@@ -371,12 +371,12 @@ nav .show, nav input, .icon{
     border-top: 1px solid #d9d9d9;
     border-radius: 0 0 5px 5px;
 }
-.wrapper .typing-field .input-data{
+.wrapper .typing-area .input-field{
     height: 45px;
     width: 335px;
     position: relative;
 }
-.wrapper .typing-field .input-data input{
+.wrapper .typing-area .input-field input{
     height: 100%;
     width: 100%;
     outline: none;
@@ -387,17 +387,17 @@ nav .show, nav input, .icon{
     background: #fff;
     transition: all 0.3s ease;
 }
-.typing-field .input-data input:focus{
+.typing-area .input-field input:focus{
     border-color: var(--light-black);
 }
-.input-data input::placeholder{
+.input-field input::placeholder{
     color: #999999;
     transition: all 0.3s ease;
 }
-.input-data input:focus::placeholder{
+.input-field input:focus::placeholder{
     color: #bfbfbf;
 }
-.wrapper .typing-field .input-data button{
+.wrapper .typing-area .input-field button{
     position: absolute;
     right: 5px;
     top: 50%;
@@ -415,11 +415,11 @@ nav .show, nav input, .icon{
     transform: translateY(-50%);
     transition: all 0.3s ease;
 }
-.wrapper .typing-field .input-data input:valid ~ button{
+.wrapper .typing-area .input-field input:valid ~ button{
     opacity: 1;
     pointer-events: auto;
 }
-.typing-field .input-data button:hover{
+.typing-area .input-field button:hover{
     background: var(--light-black);
 }
 .wrapper .ownership{

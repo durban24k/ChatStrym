@@ -19,14 +19,14 @@
                     <section class="form login">
                          <header>ChatStrym <span>|</span> Login</header>
                          <form action="#">
-                              <div class="error-txt">This is an error message!!</div>
+                              <div class="error-txt"></div>
                               <div class="field input">
                                    <label>Email</label>
                                    <input type="email" name="email" placeholder="Enter Your Email Address">
                               </div>
                               <div class="field input">
                                    <label>Password</label>
-                                   <input type="password" name="password" placeholder="Enter Your Password">
+                                   <input type="password" name="pswrd" placeholder="Enter Your Password">
                                    <i class="fas fa-eye"></i>
                               </div>
                               <div class="field button">
@@ -35,9 +35,9 @@
                               <div class="field forgot-pass">
                                    <a href="#">Forgot Password?</a>
                               </div>
-                              <div class="field google">
+                              <!-- <div class="field google">
                                    <input type="submit" value="&#xf1a0;  Login With Google">
-                              </div>
+                              </div> -->
                          </form>
                          <div class="link">Not Yet Registered? <a href="./register.php">Signup Now</a></div>
                     </section>
@@ -45,5 +45,6 @@
           </div>
      </div>
      <script src="./js/pass-show.js"></script>
+     <script src="../js/login.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const form = document.querySelector(".signup form"),
+const form = document.querySelector(".login form"),
       submitBtn = form.querySelector(".button input"),
       errorTxt = form.querySelector(".error-txt");
 
@@ -8,16 +8,16 @@ form.onsubmit = (e)=>{
 
 submitBtn.onclick = ()=>{
      var xhr = new XMLHttpRequest(); //creating a XML object
-     xhr.open("POST", "../config/signup.php", true);
+     xhr.open("POST", "../config/login.php", true);
      xhr.onload = ()=>{
           if(xhr.readyState === XMLHttpRequest.DONE){
                if(xhr.status === 200){
                     console.log(xhr.responseText);
-                    if(xhr.responseText !== 'success'){
-                         location.href = '../login/index.php';
+                    if(xhr.responseText === 'success'){
+                         location.href = '../agent/index.php';
                     }else{
-                         errorTxt.textContent = xhr.responseText;
                          errorTxt.style.display = "block";
+                         errorTxt.textContent = xhr.responseText;
                     }
                }
           }
